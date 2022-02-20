@@ -1,7 +1,7 @@
 from flask import Flask
 import socket
 import datetime
-app = Flask(_name_)
+app = Flask(__name__)
 @app.route('/')
 def hello_world():
     hostname = socket.gethostname()
